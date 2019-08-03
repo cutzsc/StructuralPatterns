@@ -10,7 +10,16 @@ namespace Facade
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello");
+			Lumberjack l = new Lumberjack();
+			Forester f = new Forester();
+			WoodPorter wp = new WoodPorter();
+			Carpenter c = new Carpenter();
+
+			WoodProcessingFacade lumbermill = new WoodProcessingFacade(l, c, f, wp);
+
+			lumbermill.Start();
+			Console.WriteLine();
+			lumbermill.Stop();
 
 			Console.ReadLine();
 		}
