@@ -10,6 +10,16 @@ namespace Decorator
 	{
 		static void Main(string[] args)
 		{
+			Weapon winfield = new Winfield();
+			winfield.Specifications();
+
+			winfield = new ExtendedMagazineWeapon(winfield);
+			winfield.Specifications();
+
+			winfield = new ImprovedLensWeapon(winfield);
+			winfield.Specifications();
+
+			Console.ReadLine();
 		}
 	}
 }
