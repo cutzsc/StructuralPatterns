@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fir.cs" />
+    <Compile Include="Pine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spruce.cs" />
+    <Compile Include="Tree.cs" />
+    <Compile Include="TreeModel.cs" />
+    <Compile Include="TreeFactory.cs" />
+    <Compile Include="Vector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
